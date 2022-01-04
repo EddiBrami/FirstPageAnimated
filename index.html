@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Diseña tu personaje</title>
+</head>
+<body>
+	<div class="page">
+		<!-- Main Content -->
+		<section class="container">
+			<nav class="navbar">
+				<div class="navbar-content">
+					<img src="https://logodownload.org/wp-content/uploads/2014/09/lol-league-of-Legends-logo.png" alt="Logo">
+					<ul>
+						<li><a href="#">Exclusive</a></li>
+						<li><a href="#">Childs</a></li>
+						<li><a href="#">Design your hometown</a></li>
+						<li><a href="#">Options</a></li>
+					</ul>
+				</div>
+			</nav>
+
+			<section class="main-content">
+				<p>Design your</p>
+				<h1>Super Champ!</h1>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam mollitia eum consectetur eaque consequatur non sequi voluptate eveniet minima, unde!</p>
+			</section>
+
+			<section class="side-content">
+				<p>Campeón</p>
+				<div></div>
+				<img src="https://images.contentstack.io/v3/assets/blt370612131b6e0756/blt804eabffbf15dc51/5f4defe95acde4265bb2da77/Champion_garen_HP.png" alt="Garen">
+			</section>
+
+			<!-- FOOTER -->
+			<section class="footer">
+				<div class="buttons">
+					<img src="https://www.leagueoflegends.com/static/fighter-7a08920b696ecdb673edeeae1d3c616e.png" alt="Yasuo">
+				</div>
+				<div class="buttons">
+					<img src="https://images.contentstack.io/v3/assets/blt370612131b6e0756/blt49d455537d60c8ea/5f57beb458d02047f3edc787/Champion_Ahri_HP.png" alt="Ahri">
+				</div>
+			    <div class="buttons">
+			     	<img src="https://images.contentstack.io/v3/assets/blt370612131b6e0756/blt3efee145a07dc9a7/5f4defe82931d5251031459e/Champion_ashe_HP.png" alt="Ashe">
+			     </div>
+			</section>
+		</section>
+		<!-- Loader -->
+		<section class="loader">
+			<div></div>
+			<div></div>
+			<div></div>
+		</section>
+		<!-- Modal -->
+		<section class="modal hidden">
+		  <div class="modal-content">
+			<img class="close-modal" src="https://cdn-icons.flaticon.com/png/512/2976/premium/2976286.png?token=exp=1635260373~hmac=265b3eb77d4a838ce56a93bfe96847c1" alt="close">
+			<div class="slider-content">
+			 <input type="radio" name="slider-1" id="radio-1" checked>
+			 <input type="radio" name="slider-1" id="radio-2">
+			 <input type="radio" name="slider-1" id="radio-3">
+
+			  <div class="cards">
+			  <label for="radio-1" class="card  card1">
+			  <img class="spi1" src="https://static.platzi.com/media/public/uploads/spider-man-3_19f5c510-8059-4477-abf8-42249a5445b7.png" alt="Spiderman">
+			  </label>
+			  <label for="radio-2" class="card card2">
+			  <img class="spi2" src="https://static.platzi.com/media/public/uploads/spider-man-2_b24c96b3-6d59-496f-815d-32b25eba0141.png" alt="spiderman">
+			  </label>
+			  <label for="radio-3" class="card card3">
+			  <img class="spi3" src="https://static.platzi.com/media/public/uploads/spider-man_db8af43d-b692-4986-a385-e645d286e142.png" alt="spiderman">
+			  </label>
+			 		</div>
+			 	</div>
+			 </div>
+		</section>
+	</div>
+	<script>
+		const modal = document.querySelector('.modal');
+		const buttons = document.querySelectorAll('.buttons');
+        const close = document.querySelector('.close-modal'); 
+
+        for (let i = 0; i < buttons.length; i++) {
+        	
+		buttons[i].addEventListener('click', () => {
+			modal.classList.remove('hidden');
+			modal.classList.add('visible');
+		   });
+        };
+
+
+		close.addEventListener('click', () => {
+			modal.classList.add('hidden');
+			modal.classList.remove('visible');
+		});
+	</script>
+</body>
+</html>
